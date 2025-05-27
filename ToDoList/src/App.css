@@ -1,0 +1,235 @@
+.todo-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 3%;
+  /* background-image: linear-gradient(100deg, #001214, #001f29); */
+  background-color: #ffff;
+  color: white;
+  transition: 0.3s linear;
+  overflow: hidden;
+}
+
+
+.form
+ {
+  margin: 0 1rem;
+  min-height: 10vh;
+  width: 100%;
+}
+h1{
+  color:#5dade2;
+}
+
+.date-time {
+  font-size:20px;
+  text-align: center;
+  color:black
+}
+
+form {
+  display: flex;
+  
+  justify-content: center;
+  margin: 15px 0;
+  padding: 0.8rem;
+  width: 100%;
+ 
+}
+
+form input {
+  padding: 12px;
+  font-size: 1.2rem;
+  
+  border: none;
+  outline: none;
+  /* border-radius: 15; */
+  font-family:  serif;
+  border-top-left-radius: 17px;
+  border-bottom-left-radius: 17px;
+  max-width: 500px;
+  transition: background-color 200ms ease-in-out;
+  width: 100%;
+  background-color: #dbe1ee;
+  box-shadow:  0 1px 7px #dbe1ee;
+  color:#001214
+}
+
+form input:hover {
+  cursor: text;
+
+}
+
+form input::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+#inputbutton{
+box-shadow: 0 3px 10px #5dade2;
+
+}
+button {
+  border: none;
+  outline: none;
+  transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+  background-color: #2c3e50;
+ 
+  color: rgb(0, 0, 0);
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: #dbe1ee;
+  color:#42a0de;
+}
+#togglebutton{
+  background-color: #0a0b0a;
+  color: #fff;
+  border-radius: 30px;
+}
+
+form button {
+  padding: 10.8px;
+  font-size: 17px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  min-width: 100px;
+  background-color: #5dade2;
+  border: #5dade2 solid;
+  color: var(--secondary-color);
+}
+
+
+.myUnOrdList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.todo-list {
+  
+  list-style: none;
+}
+
+.todo-item {
+  margin: 2.4rem;
+  
+  font-size: 18px;
+  font-family:  serif;
+  color: #1c2833;
+  border-radius: 20px;
+  background-color: #dbe1ee;
+  min-width: 350px;
+  max-width: 400px;
+  padding: 10px 20px;
+  display: grid;
+  box-shadow: 0 1px 6px #fff;
+  grid-template-columns: 1fr 0.3fr 0.3fr;
+  justify-content: start;
+  
+  /*align-items: center;
+    */ /*wrapsthelinks*/
+  overflow-wrap: anywhere;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-item.completed .check-btn {
+  color: #4CAF50;
+}
+
+.check-btn,
+.delete-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  background-color: #dbe1ee;
+ 
+}
+
+.check-btn {
+  color: #1add21;
+
+}
+
+.delete-btn {
+ 
+  color: #e74c3c;
+
+}
+.check-btn:hover,.delete-btn:hover{
+  transform: scale(1.1);
+}
+
+
+.checkList {
+  text-decoration: line-through;
+}
+
+.notCheckList {
+  text-decoration: none;
+}
+
+.clear-btn {
+  background-color: #d5210d;
+  font-size: 1.3rem;
+  color: white;
+  border: 2px solid #d5210d;
+  box-shadow: 0 4px 10px  #d5210d;
+  padding: 0.5rem 0.8rem;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  
+}
+
+.clear-btn:hover {
+  background-color: white;
+  color: #d5210d;
+}
+
+
+/* for the dark mode theme css */
+.dark .todo-container {
+  background-color:#1e212a;
+  color: #eee;
+}
+
+.dark form input {
+  background-color: #444;
+  color: #eee;
+  box-shadow: none;
+}
+
+
+
+.dark .todo-item {
+  background-color: #444;
+  color: #ccc;
+  box-shadow: none;
+}
+
+.dark .check-btn {
+  background-color: #444;
+ 
+}
+
+.dark .delete-btn {
+  background-color: #444;
+  
+}
+.dark .date-time{
+  color: #fff;
+}
+
+.dark #togglebutton {
+  background-color: white !important;
+  color: black !important;
+}
+
+
