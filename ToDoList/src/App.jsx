@@ -107,7 +107,7 @@ function App() {
         return CurTask;
       }
     }
-    );
+    );  
     setTask(updatecheck);
 
   }
@@ -115,7 +115,7 @@ function App() {
   //set to local storage
 
   useEffect(() => {
-    localStorage.setItem(tododate, JSON.stringify(task));
+    localStorage.setItem("tododate", JSON.stringify(task));
   }, [task]);
 
 

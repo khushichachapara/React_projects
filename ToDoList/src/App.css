@@ -1,4 +1,4 @@
-.todo-container {
+  .todo-container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -84,7 +84,7 @@ form button:hover {
   color:#42a0de;
 }
 #togglebutton{
-  background-color: #0a0b0a;
+  background-color: #0b0b0a;
   color: #fff;
   border-radius: 30px;
 }
@@ -228,7 +228,7 @@ form button {
 }
 
 .dark #togglebutton {
-  background-color: white !important;
+  background-color: yellow !important;
   color: black !important;
 }
 
