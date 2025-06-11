@@ -7,6 +7,6 @@ import Login from './loginform.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    {/* <Login/> */}
+    <Login/>
   </StrictMode>,
 )

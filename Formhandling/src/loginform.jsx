@@ -22,14 +22,14 @@ const handlesubmit =(e)=>{
             <div class="min-h-screen flex items-center justify-center bg-gray-100">
                 <form 
                 onSubmit={handlesubmit}
-                class="bg-white p-8 rounded-xl shadow-md w-full max-w-sm space-y-6">
+                class="bg-white p-8 m-4 rounded-xl shadow-md w-full max-w-sm space-y-6">
                     <h2 class="text-2xl font-bold text-center text-cyan-600">Login</h2>
 
                     <div>
-                        <label class="flex mb-1 font-medium text-gray-700" for="username">Username</label>
+                        <label class="flex mb-1 font-medium text-gray-700" for="username">Useremail</label>
                         <input
                             id="email"
-                            name="usernemailme"
+                            name="email"
                             type="email"
                             required
                             value={email}
@@ -62,4 +62,4 @@ const handlesubmit =(e)=>{
         </>
     )
 }
-export default Login;
+export default Login; 
